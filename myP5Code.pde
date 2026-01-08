@@ -4,9 +4,10 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var leftX = 45;
-var rightX = 370;
+var leftX = 150;
+var rightX = 100;
 var sunRadius = 100;
+var clouds = 100
 
 
 //🟢Draw Function - Runs on Repeat
@@ -33,6 +34,10 @@ draw = function(){
   ellipse(rightX+62, 100, 70, 60);
   ellipse(rightX-62, 100, 70, 60);
   
+  leftX +=1;
+  rightX +=2;
+  clouds = clouds * 99/100;
+
 }
 
 
