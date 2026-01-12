@@ -26,18 +26,22 @@ draw = function(){
 
   // left cloud
   ellipse(leftX, 150, 126, 97);
-  ellipse(leftX+62, 150, 70, 60);
   ellipse(leftX-62, 150, 70, 60);
+  ellipse(leftX+62, 150, 70, 60);
 
   // right cloud
   ellipse(rightX, 100, 126, 97);
   ellipse(rightX+62, 100, 70, 60);
   ellipse(rightX-62, 100, 70, 60);
   
-  leftX +=1;
+  leftX -=2;
   rightX +=2;
   clouds = clouds * 99/100;
 
+sunRadius = sunRadius +2;
+if(sunRadius > 400){
+  sunRadius = 30;
+}
 }
 
 
